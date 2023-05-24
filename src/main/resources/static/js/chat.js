@@ -21,7 +21,7 @@ $(function(){
     let updateUser = function(){
             $('.users-list').html('<i>Пользователей нет</i>');
             $.get('/user', {}, function(response){
-                if(response.length == 0){
+                if(response.length === 0){
                     return;
                 }
                 $('.users-list').html('');
@@ -35,7 +35,7 @@ $(function(){
     let updateMessages = function(){
         $('.messages-list').html('<i>Сообщений нет</i>');
         $.get('/message', {}, function(response){
-            if(response.length == 0){
+            if(response.length === 0){
                 return;
             }
             $('.messages-list').html('');
@@ -60,8 +60,8 @@ $(function(){
             });
         });
 
-        setInterval(updateMessages, 10000);
-        setInterval(updateUser, 10000);
+        setInterval(updateMessages, 1000);
+        setInterval(updateUser, 1000);
     };
 
     let registerUser = function(name){

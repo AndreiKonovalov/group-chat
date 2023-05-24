@@ -16,7 +16,7 @@ FrontEnd - HTML, CSS, JavaScript
 
 Клонируйте репозиторий.
 
-Настройте application.yml:
+Настройте application.properties:
 
 Введите логин и пароль для подключения к своей базе данных с соответствующими правами;
 
